@@ -14,28 +14,35 @@
 }
 
 .input input {
-  vertical-align: middle;
-  display: inline-block;
   padding: 10px;
-  margin-right: 50px;
+  margin-right: 150px;
   outline: none;
   border: none;
+  color: aliceblue;
   width: 12rem;
   height: 1.5rem;
-  border-radius: 15px;
+  background: transparent;
+  border-bottom: 2px solid #cdcdcd;
+  transition: all 0.7s;
+}
+.input input:focus {
+  border-bottom: 2px solid tomato;
 }
 
-label {
-  font-size: 20px;
-  margin-right: 20px;
+.input label {
+  font-size: 14px;
+  position: absolute;
+  transition: all 0.5s;
+  margin: -12.5px 30px 10px 5px;
 }
+
 
 .addpost {
   background-color: rgba(3, 7, 17, 0.429);
   padding: 20px;
   border-radius: 10px;
   display: inline-block;
-  transition: all 0.6s;
+  transition: all 0.7s;
   cursor: pointer;
   
   -webkit-user-select: none;
@@ -45,6 +52,7 @@ label {
 }
 .addpost:hover {
   transform: scale(1.03);
+  background-color: rgba(255, 99, 71, 0.5);
 }
 .addpost:active {
   transform: scale(0.8);

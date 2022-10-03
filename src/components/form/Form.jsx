@@ -23,11 +23,17 @@ const Form = ({ posts, setPosts, title, body, onChange, onCreate, onRemove }) =>
     <div>
       <div className='input'>
         <div className='input-post'>
-          <label for="title">제목</label>
-          <input type="text" maxlength='16' ref={titleInput} id="title" name="title" onChange={onChange} value={title} onKeyPress={onKeyPress}/>
+          
+          <label className='form-title' for="title">
+            <span className='label'>제목</span>
+          </label>
+          <input type="text" maxlength='16' ref={titleInput} name="title" autocomplete="off" onChange={onChange} value={title} onKeyPress={onKeyPress}/>
 
-          <label for="comment">내용</label>
-          <input type="text" maxlength='40' id="comment" name="body" onChange={onChange} value={body} onKeyPress={onKeyPress}/>
+          <label className='form-body' for="body">
+            <span className='label'>내용</span>
+          </label>
+          <input type="text" maxlength='40' name="body" autocomplete="off" onChange={onChange} value={body} onKeyPress={onKeyPress}/>
+          
         </div>
         <span className='addpost' onClick={onCreate}>+ Add task</span>
       </div>
