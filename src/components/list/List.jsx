@@ -36,7 +36,7 @@ const List = ({ posts, setPosts }) => {
     <div>
 
         <h2>Working...</h2>
-        <div className='card-list'>
+        <div className='card-list work'>
           { working_filter }
         </div>
 
@@ -44,7 +44,7 @@ const List = ({ posts, setPosts }) => {
       <hr/>
 
         <h2>Done...!</h2>
-        <div className='card-list'>
+        <div className='card-list done'>
           { done_filter }
         </div>
 

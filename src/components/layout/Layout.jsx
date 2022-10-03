@@ -44,7 +44,7 @@ const Layout = (props) => {
   }
 
   return(
-    <div>
+    <div className='content'>
       <Header/>
       <Form posts={props.posts} setPosts={props.setPosts} onChange={onChange} onCreate={onCreate} onRemove={onRemove} title={title} body={body}/>
     </div>

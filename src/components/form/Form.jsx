@@ -29,7 +29,7 @@ const Form = ({ posts, setPosts, title, body, onChange, onCreate, onRemove }) =>
           <label for="comment">내용</label>
           <input type="text" id="comment" name="body" onChange={onChange} value={body} onKeyPress={onKeyPress}/>
         </div>
-        <span className='addpost' onClick={onCreate}>추가하기</span>
+        <span className='addpost' onClick={onCreate}>+ Add task</span>
       </div>
       <List posts={posts} onRemove={onRemove} setPosts={setPosts}/>
     </div>
