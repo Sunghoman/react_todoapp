@@ -29,3 +29,11 @@
   padding: 5px;
   width: 5rem;
 }
+
+button {
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: translateY(-10%);
+}
