@@ -6,10 +6,13 @@
   padding: 15px;
   border-radius: 40px;
   transition: 0.4s;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.12);
+  border: none;
+  position: relative;
+  box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
 
-  border: 1px solid black;
-  background-color: #2323231a;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
 }
 
 .card h3 {
@@ -27,16 +30,22 @@
 }
 
 .card .buttons > button {
-  padding: 5px;
-  width: 5rem;
+  padding: 10px;
+  width: 7rem;
 }
 
 button {
+  cursor: pointer;
   transition: all 0.3s;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
   transform: translateY(-10%);
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 }
 
 .close {
@@ -44,10 +53,18 @@ button:hover {
   font-size: 27px;
   cursor: pointer;
   width: fit-content;
+  height: fit-content;
   transition: all 0.5s;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .close:hover {
   color: tomato;
   transform: scale(1.1);
+}
+
+.title {
+  margin-top: 35px;
 }

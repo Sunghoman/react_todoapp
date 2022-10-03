@@ -2,9 +2,8 @@ body {
   max-width: 1200px;
   min-width: 800px;
   margin: 0 auto;
-  background-color: #ffffffb3;
 }
 
 .content {
-  background-color: rgb(220, 220, 255)
+  background-color: #e9f0f5
 }

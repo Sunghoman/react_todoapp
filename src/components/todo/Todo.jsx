@@ -13,8 +13,8 @@ const Todo = ({ todo, setBtn }) => {
           }}>X</span>
           </div>
 
-        <h3>{ todo.title }</h3>
-        <p>{ todo.body }</p>
+        <h3 className='title'>{ todo.title }</h3>
+        <p className='body'>{ todo.body }</p>
         <div className='buttons'>
           <button onClick={() => {
             setBtn(todo);
